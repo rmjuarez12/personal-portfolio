@@ -1,19 +1,90 @@
+import CodeSnippet from "@/components/ui/CodeSnippet";
+import Heading from "@/components/ui/Heading";
+import TypewritterText from "@/components/ui/TypewritterText";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
+  const codeLinesServices = [
+    {
+      text: (
+        <>
+          <span className='text-fuchsia-400'>const</span> myExpertise{" "}
+          <span className='text-sky-300'>= [</span>
+        </>
+      ),
+      highlight: false,
+    },
+    {
+      text: "'Web Development',",
+      highlight: true,
+    },
+    {
+      text: "'Mobile App Development',",
+      highlight: true,
+    },
+    {
+      text: "'Backend Development'",
+      highlight: true,
+    },
+    {
+      text: (
+        <>
+          <span className='text-sky-300'>]</span>;
+        </>
+      ),
+      highlight: false,
+    },
+    {
+      text: "",
+      highlight: false,
+    },
+    {
+      text: (
+        <>
+          console.<span className='text-fuchsia-400'>log</span>(
+          <span className='text-lime-500'>&apos;What I offer: &apos;</span>,
+          myExpertise);
+        </>
+      ),
+      highlight: false,
+    },
+  ];
+
   return (
     <>
-      <h1>PAge Title</h1>
+      <Heading
+        title={
+          <>
+            Hello, I&apos;m
+            <span className='text-red-400'> Richard Rodriguez</span>
+          </>
+        }
+        subtitle='RICK ROD DEV'
+        showBorder={false}
+      />
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+      <TypewritterText />
+
+      <p className='mb-4 text-lg'>
+        I&apos;m a dynamic and results-driven software engineer with over 10yrs
+        of experience developing and implementing innovative software solutions.
+        Proficient in multiple programming languages and technologies, with a
+        proven track record of delivering high-quality code on time and within
+        budget. Skilled in problem-solving and collaborating with
+        cross-functional teams to drive project success. Passionate about
+        staying up-to-date with emerging technologies and continuously enhancing
+        skills to tackle complex technical challenges.
       </p>
+
+      <CodeSnippet codeLines={codeLinesServices} />
+
+      <Heading
+        title={<>What I Offer</>}
+        subtitle='Services'
+        showBorder={true}
+        className='mt-20'
+      />
     </>
   );
 }

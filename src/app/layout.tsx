@@ -16,8 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   // Helper for section classes
-  const sharedSectionClasses =
-    "mx-2 rounded-lg px-4 py-4 bg-slate-950 text-white";
+  const sharedSectionClasses = "mx-2 rounded-lg bg-slate-950 text-white";
 
   return (
     <html lang='en' className={`${robotoMono.variable} ${poppins.variable}`}>
@@ -34,16 +33,19 @@ export default function RootLayout({
           >
             <div
               id='section-1'
-              className={`basis-1/5 opacity-0 translate-y-10 ${sharedSectionClasses}`}
+              className={`basis-1/5 opacity-0 translate-y-10 md:p-6 ${sharedSectionClasses}`}
             >
               <GeneralInfo />
             </div>
-            <div id='section-2' className={`basis-3/4 ${sharedSectionClasses}`}>
+            <div
+              id='section-2'
+              className={`basis-3/4 md:p-10 ${sharedSectionClasses}`}
+            >
               {children}
             </div>
             <div
               id='section-3'
-              className={` basis-1/12 opacity-0 translate-y-10 ${sharedSectionClasses}`}
+              className={` basis-1/12 opacity-0 translate-y-10 p-4 ${sharedSectionClasses}`}
             >
               <MainMenu />
             </div>
