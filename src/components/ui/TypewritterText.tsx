@@ -14,9 +14,8 @@ export default function TypewritterText() {
 
     tl.fromTo(
       ".typewritter-box",
-      { width: 5, height: 5 },
+      { height: 5 },
       {
-        width: "auto",
         height: "auto",
         duration: 2,
       }
@@ -52,13 +51,13 @@ export default function TypewritterText() {
   }, []);
 
   return (
-    <div className='typewritter-box bg-slate-800 flex flex-row items-center p-2 w-fit mx-auto rounded mb-6'>
-      <div className='text-slate-500'>
+    <div className='typewritter-box bg-slate-800 flex flex-row items-center p-2 w-fit rounded mb-6'>
+      <div className='text-slate-500 text-2xl'>
         <IoIosArrowForward />
       </div>
 
       <div
-        className={`anim-typewriter text-lime-500 font-bold ${robotoMono.className}`}
+        className={`anim-typewriter text-lime-500 font-bold ${robotoMono.className} text-2xl`}
       >
         Full-Stack Developer
       </div>

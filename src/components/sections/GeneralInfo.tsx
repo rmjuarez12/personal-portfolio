@@ -1,8 +1,8 @@
 import Image from "next/image";
-import TypewritterText from "../ui/TypewritterText";
 import Button from "../ui/Button";
 
 import { FaDownload } from "react-icons/fa6";
+import InfoCard from "../ui/InfoCard";
 
 export default function GeneralInfo() {
   return (
@@ -15,9 +15,30 @@ export default function GeneralInfo() {
         height={200}
       />
 
-      <h2 className='text-2xl mb-2 text-center'>Richard Rodriguez</h2>
+      <h2 className='text-2xl mb-4 text-center'>Richard Rodriguez</h2>
 
-      <TypewritterText />
+      <div className='mb-5 bg-slate-800 rounded'>
+        {/* <InfoCard
+          icon={<FaDownload />}
+          label={"Phone"}
+          description={"786.380.0965"}
+          isLast={false}
+        /> */}
+
+        <InfoCard
+          icon={<FaDownload />}
+          label={"Email"}
+          description={"rmjuarez12@gmail.com"}
+          isLast={false}
+        />
+
+        <InfoCard
+          icon={<FaDownload />}
+          label={"Location"}
+          description={"USA"}
+          isLast={true}
+        />
+      </div>
 
       <Button btnTxt='Download CV' newTab={true} icon={<FaDownload />} />
     </>
