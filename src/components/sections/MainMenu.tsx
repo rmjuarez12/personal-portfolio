@@ -7,7 +7,7 @@
 import { usePathname } from "next/navigation";
 import MenuButton from "../ui/MenuButton";
 
-import { FaHome } from "react-icons/fa";
+import { RiPagesFill } from "react-icons/ri";
 import { FaBriefcase } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 
@@ -16,8 +16,8 @@ export default function MainMenu() {
   const pathname = usePathname();
 
   const mainMenu = [
-    { name: "Home", url: "/", icon: <FaHome /> },
-    { name: "About", url: "/about", icon: <FaUser /> },
+    { name: "About", url: "/", icon: <FaUser /> },
+    { name: "Resume", url: "/about", icon: <RiPagesFill /> },
     { name: "Projects", url: "/projects", icon: <FaBriefcase /> },
   ];
 
