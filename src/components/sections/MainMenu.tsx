@@ -17,7 +17,7 @@ export default function MainMenu() {
 
   const mainMenu = [
     { name: "About", url: "/", icon: <FaUser /> },
-    { name: "Resume", url: "/about", icon: <RiPagesFill /> },
+    { name: "Resume", url: "/resume", icon: <RiPagesFill /> },
     { name: "Projects", url: "/projects", icon: <FaBriefcase /> },
   ];
 
