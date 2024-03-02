@@ -1,8 +1,11 @@
 import CodeSnippet from "@/components/ui/CodeSnippet";
 import Heading from "@/components/ui/Heading";
+import ServiceBox from "@/components/ui/ServiceBox";
 import TypewritterText from "@/components/ui/TypewritterText";
-import Image from "next/image";
-import Link from "next/link";
+
+import { FaCode, FaMobileAlt } from "react-icons/fa";
+import { MdWeb } from "react-icons/md";
+import { IoServerOutline } from "react-icons/io5";
 
 export default function Home() {
   const codeLinesServices = [
@@ -51,6 +54,36 @@ export default function Home() {
     },
   ];
 
+  const services = [
+    {
+      icon: <FaCode />,
+      iconColor: "text-lime-500",
+      title: "Web Development",
+      description:
+        "From sleek and responsive designs to robust functionality, I bring your ideas to life with precision and flair. Let's collaborate to transform your online presence into something truly exceptional.",
+    },
+    {
+      icon: <FaMobileAlt />,
+      iconColor: "text-red-900",
+      title: "Mobile Development",
+      description:
+        "As a seasoned mobile developer, I specialize in crafting dynamic and intuitive apps that captivate users and drive engagement. Let's create an app that not only meets but exceeds your expectations, delivering an unforgettable experience to your users.",
+    },
+    {
+      icon: <IoServerOutline />,
+      title: "Backend Development",
+      iconColor: "text-fuchsia-400",
+      description:
+        "As a proficient backend developer, I specialize in building the robust infrastructure that powers your applications and websites. From architecting scalable databases to crafting efficient APIs, I ensure your platform operates seamlessly, handling complex tasks with ease.",
+    },
+    {
+      icon: <MdWeb />,
+      title: "Frontend Development",
+      description:
+        "As a dedicated frontend developer, I specialize in creating immersive and user-friendly interfaces that captivate and engage audiences. From pixel-perfect designs to seamless user experiences, I bring your vision to life with creativity and precision.",
+    },
+  ];
+
   return (
     <>
       <Heading
@@ -80,11 +113,26 @@ export default function Home() {
       <CodeSnippet codeLines={codeLinesServices} />
 
       <Heading
-        title={<>What I Offer</>}
+        title={<>Let Me Support You With</>}
         subtitle='Services'
         showBorder={true}
         className='mt-20'
       />
+
+      <div className='flex flex-row flex-wrap justify-between'>
+        {services.map((service, index) => {
+          return (
+            <ServiceBox
+              className='basis-5/12 m-5'
+              key={index}
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+              iconColor={service.iconColor}
+            />
+          );
+        })}
+      </div>
     </>
   );
 }
