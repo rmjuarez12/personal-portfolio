@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang='en' className={`${robotoMono.variable} ${poppins.variable}`}>
       <body
-        className='md:container md:mx-auto px-5 py-5 bg-cover'
+        className='md:container md:mx-auto px-5 py-5 bg-cover bg-fixed'
         style={{ backgroundImage: "url(/static/images/body-bg.jpg)" }}
       >
         <Header />
@@ -33,7 +33,7 @@ export default function RootLayout({
           >
             <div
               id='section-1'
-              className={`basis-1/5 opacity-0 translate-y-10 md:p-6 ${sharedSectionClasses}`}
+              className={`basis-1/5 opacity-0 translate-y-10 md:p-6 md:sticky top-32 ${sharedSectionClasses}`}
             >
               <GeneralInfo />
             </div>
@@ -45,7 +45,7 @@ export default function RootLayout({
             </div>
             <div
               id='section-3'
-              className={` basis-1/12 opacity-0 translate-y-10 p-4 ${sharedSectionClasses}`}
+              className={` basis-1/12 opacity-0 translate-y-10 p-4 md:sticky top-2 ${sharedSectionClasses}`}
             >
               <MainMenu />
             </div>
