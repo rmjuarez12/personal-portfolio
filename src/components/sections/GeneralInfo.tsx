@@ -13,7 +13,7 @@ export default function GeneralInfo() {
   return (
     <>
       <Image
-        className='rounded-xl shadow-slate-100 shadow-sm -mt-32 mx-auto mb-6'
+        className='rounded-xl shadow-slate-100 shadow-sm -mt-32 mx-auto mb-6 w-auto h-auto'
         src='/static/images/profile-pic.jpg'
         alt='Richard Rodriguez Photo'
         width={200}

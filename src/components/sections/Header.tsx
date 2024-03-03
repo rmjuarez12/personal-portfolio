@@ -26,6 +26,7 @@ export default function Header() {
             alt='Rick Rod Logo'
             width={200}
             height={50}
+            className='w-auto h-auto'
           />
         </Link>
       </div>
