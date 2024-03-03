@@ -18,6 +18,7 @@ export default function GeneralInfo() {
         alt='Richard Rodriguez Photo'
         width={200}
         height={200}
+        priority={true}
       />
 
       <h2 className='text-2xl mb-4 text-center'>Richard Rodriguez</h2>

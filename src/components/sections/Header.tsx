@@ -27,6 +27,7 @@ export default function Header() {
             width={200}
             height={50}
             className='w-auto h-auto'
+            priority={true}
           />
         </Link>
       </div>
