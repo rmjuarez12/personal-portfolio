@@ -1,6 +1,6 @@
 export default function Heading(props: HeadingProps) {
   return (
-    <div className={`mb-5 ${props.className}`}>
+    <div className={`${props.className} mb-5`}>
       <h3 className='text-5xl mb-5 font-bold relative'>
         {props.subtitle != null && (
           <span className='select-none absolute -top-3/4 -left-5 text-7xl z-0 opacity-5'>

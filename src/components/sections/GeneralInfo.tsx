@@ -6,6 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { MdEmail } from "react-icons/md";
 import { IoLocationSharp } from "react-icons/io5";
+import { RiSpeakFill } from "react-icons/ri";
 import InfoCard from "../ui/InfoCard";
 import IconBox from "../ui/IconBox";
 
@@ -48,6 +49,13 @@ export default function GeneralInfo() {
           icon={<IoLocationSharp />}
           label={"Location"}
           description={"USA"}
+          isLast={false}
+        />
+
+        <InfoCard
+          icon={<RiSpeakFill />}
+          label={"I Fluently Speak"}
+          description={"English, Spanish"}
           isLast={true}
         />
       </div>
