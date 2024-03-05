@@ -93,3 +93,27 @@ ul li::before {
   border-radius: 50%;
   overflow: hidden;
 }
+
+/* ProjectBox component styles */
+.project-box {
+  transition: 0.3s all;
+}
+
+.project-box:hover {
+  -webkit-box-shadow: 0 3px 10px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px 10px 0 rgba(255, 255, 255, 0.3);
+}
+
+.project-box:hover img {
+  transform: rotateY(0);
+}
+
+.project-box img {
+  transition: 0.3s all;
+  transform: perspective(800px) rotateY(45deg);
+}
+
+.project-box img:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+}
