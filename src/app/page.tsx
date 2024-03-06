@@ -103,11 +103,12 @@ export default function Home() {
         I&apos;m a dynamic and results-driven software engineer with over 10yrs
         of experience developing and implementing innovative software solutions.
         Proficient in multiple programming languages and technologies, with a
-        proven track record of delivering high-quality code on time and within
-        budget. Skilled in problem-solving and collaborating with
-        cross-functional teams to drive project success. Passionate about
-        staying up-to-date with emerging technologies and continuously enhancing
-        skills to tackle complex technical challenges.
+        proven track record of delivering high-quality code on time. Skilled in
+        problem-solving and collaborating with cross-functional teams to drive
+        project success. Passionate about staying up-to-date with emerging
+        technologies and continuously enhancing skills to tackle complex
+        technical challenges. Bilingual and well-spoken with ability to work
+        closely with people of all different backgrounds and personalities.
       </p>
 
       <CodeSnippet codeLines={codeLinesServices} />
