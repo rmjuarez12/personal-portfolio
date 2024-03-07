@@ -5,4 +5,10 @@ export interface TimelineSectionObj {
   title: string;
   subtitle: string;
   description: string | React.ReactNode;
+  headlingURL?: string;
+}
+
+export interface SkillObj {
+  title: string;
+  icon: React.ReactNode;
 }
