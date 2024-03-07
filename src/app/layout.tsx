@@ -8,6 +8,9 @@ import { poppins, robotoMono } from "@/utility/fonts";
 export const metadata = {
   title: "Richard Rodriguez",
   description: "Portfolio for Richard Rodriguez",
+  icons: {
+    icon: "/static/favicon.ico",
+  },
 };
 
 export default function RootLayout({
@@ -37,17 +40,20 @@ export default function RootLayout({
             >
               <GeneralInfo />
             </div>
-            <div
-              id='section-2'
-              className={`basis-3/4 md:p-10 ${sharedSectionClasses}`}
-            >
-              {children}
-            </div>
-            <div
-              id='section-3'
-              className={` basis-1/12 opacity-0 translate-y-10 p-4 md:sticky top-2 ${sharedSectionClasses}`}
-            >
-              <MainMenu />
+
+            <div className='flex flex-row basis-4/5 items-start'>
+              <div
+                id='section-2'
+                className={`basis-11/12 md:p-10 ${sharedSectionClasses}`}
+              >
+                {children}
+              </div>
+              <div
+                id='section-3'
+                className={` basis-1/12 opacity-0 translate-y-10 p-4 md:sticky top-2 ${sharedSectionClasses}`}
+              >
+                <MainMenu />
+              </div>
             </div>
           </div>
         </main>
