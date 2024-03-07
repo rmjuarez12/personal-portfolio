@@ -51,6 +51,7 @@ export default function Timeline(props: TimelineProps) {
               title={timeline.title}
               subtitle={timeline.subtitle}
               description={timeline.description}
+              headlingURL={timeline.headlingURL}
             />
           );
         })}
@@ -67,7 +68,19 @@ function TimelineSection(props: TimelineSectionObj) {
       </div>
 
       <div className='basis-2/3'>
-        <div className='font-bold text-2xl text-red-400'>{props.title}</div>
+        <div className='font-bold text-2xl text-red-400'>
+          {props.headlingURL != null ? (
+            <a
+              className='underline hover:text-slate-500 transition-all'
+              href={props.headlingURL}
+              target='_blank'
+            >
+              {props.title}
+            </a>
+          ) : (
+            props.title
+          )}
+        </div>
         <div className=' font-semibold text-lg mb-2'>{props.subtitle}</div>
         <div>{props.description}</div>
       </div>

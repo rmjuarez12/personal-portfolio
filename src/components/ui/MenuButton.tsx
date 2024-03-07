@@ -1,10 +1,15 @@
 import Link from "next/link";
 
 export default function MenuButton(props: MenuButtonProps) {
+  const pageTransition = () => {
+    console.log("clicked");
+  };
+
   return (
     <Link
       href={props.url}
-      className={`size-20 flex flex-col rounded-lg hover:bg-red-900 align-middle justify-center items-center transition-all my-3 mx-auto ${
+      onClick={pageTransition}
+      className={`scroll-smooth size-20 flex flex-col rounded-lg hover:bg-red-900 align-middle justify-center items-center transition-all my-3 mx-auto ${
         props.isActive ? "bg-red-900" : "bg-slate-800"
       }`}
     >

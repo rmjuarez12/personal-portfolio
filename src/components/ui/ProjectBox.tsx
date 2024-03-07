@@ -6,6 +6,7 @@ import Image from "next/image";
 import Button from "./Button";
 
 import { FaGithub } from "react-icons/fa6";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { useEffect } from "react";
 
 export default function ProjectBox(props: ProjectBoxProps) {
@@ -16,7 +17,9 @@ export default function ProjectBox(props: ProjectBoxProps) {
 
   return (
     <div
-      className={`project-box md:p-6 border-slate-800 border-2 border-solid flex flex-row rounded-lg opacity-0 -translate-x-5`}
+      className={`${
+        props.className != null && props.className
+      } project-box md:p-6 border-slate-800 border-2 border-solid flex flex-row rounded-lg opacity-0 -translate-x-5`}
     >
       <div className='basis-1/2 p-4'>
         <Image
@@ -34,7 +37,6 @@ export default function ProjectBox(props: ProjectBoxProps) {
         <p className='mb-4'>{props.description}</p>
 
         <div className='mb-6'>
-          <p className='text-white mb-2 font-bold'>Technologies</p>
           <div>
             {props.technologies?.map((tech, index) => {
               return (
@@ -54,14 +56,19 @@ export default function ProjectBox(props: ProjectBoxProps) {
           {props.codeURL && (
             <Button
               url={props.codeURL}
-              btnTxt='Github'
               newTab={true}
               className='mr-3'
               icon={<FaGithub />}
+              title='Github'
             />
           )}
           {props.projectUrl && (
-            <Button url={props.projectUrl} btnTxt='Website' newTab={true} />
+            <Button
+              url={props.projectUrl}
+              newTab={true}
+              icon={<FaExternalLinkAlt />}
+              title='Website'
+            />
           )}
         </div>
       </div>
@@ -76,4 +83,5 @@ interface ProjectBoxProps {
   technologies?: Array<string>;
   codeURL?: string;
   projectUrl?: string;
+  className?: string;
 }
