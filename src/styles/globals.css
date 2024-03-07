@@ -110,7 +110,7 @@ ul li::before {
 
 .project-box img {
   transition: 0.3s all;
-  transform: perspective(800px) rotateY(45deg);
+  transform: perspective(800px) rotateY(25deg);
 }
 
 .project-box img:hover {

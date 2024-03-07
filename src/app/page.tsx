@@ -105,10 +105,15 @@ export default function Home() {
         Proficient in multiple programming languages and technologies, with a
         proven track record of delivering high-quality code on time. Skilled in
         problem-solving and collaborating with cross-functional teams to drive
-        project success. Passionate about staying up-to-date with emerging
-        technologies and continuously enhancing skills to tackle complex
-        technical challenges. Bilingual and well-spoken with ability to work
-        closely with people of all different backgrounds and personalities.
+        project success. Bilingual and well-spoken with ability to work closely
+        with people of all different backgrounds and personalities.
+      </p>
+
+      <p className='mb-6 text-lg'>
+        My favorite hobbies are: drawing, play music(I love me some guitar
+        playing), and exercising. My utmost favorite hobby is eating, I am
+        really passionate about it! I also like to do Leetcode challenges, as it
+        helps my programming juices fresh and wired!
       </p>
 
       <CodeSnippet codeLines={codeLinesServices} />
