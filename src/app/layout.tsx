@@ -6,7 +6,7 @@ import "../styles/globals.css";
 import { poppins, robotoMono } from "@/utility/fonts";
 
 export const metadata = {
-  title: "Richard Rodriguez",
+  title: "Richard Rodriguez Portfolio | Software Engineer Showcase",
   description: "Portfolio for Richard Rodriguez",
   icons: {
     icon: "/static/favicon.ico",

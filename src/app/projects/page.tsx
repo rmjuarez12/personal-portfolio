@@ -1,6 +1,10 @@
 import Heading from "@/components/ui/Heading";
 import ProjectBox from "@/components/ui/ProjectBox";
 
+export const metadata = {
+  title: "Richard Rodriguez Portfolio | Projects",
+};
+
 export default function Projects() {
   return (
     <>

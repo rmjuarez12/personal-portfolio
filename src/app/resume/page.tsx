@@ -4,6 +4,10 @@ import SkillsSection from "./SkillsSection";
 import EducationSection from "./EducationSection";
 import ExperienceSection from "./ExperienceSection";
 
+export const metadata = {
+  title: "Richard Rodriguez Portfolio | Resume",
+};
+
 export default function About() {
   return (
     <>
