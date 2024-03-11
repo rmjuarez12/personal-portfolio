@@ -7,7 +7,8 @@ import { poppins, robotoMono } from "@/utility/fonts";
 
 export const metadata = {
   title: "Richard Rodriguez Portfolio | Software Engineer Showcase",
-  description: "Portfolio for Richard Rodriguez",
+  description:
+    "Experienced Miami-based software engineer dedicated to crafting innovative solutions with expertise in [specific technologies/areas]. Passionate about driving efficiency and excellence in every project.",
   icons: {
     icon: "/static/favicon.ico",
   },
