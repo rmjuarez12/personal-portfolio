@@ -103,6 +103,7 @@ export default function SkillsSection() {
     "Hosting Maintenance",
     "Hosting Setup",
     "Domain Configuration",
+    "Unity 3D",
   ];
 
   return (
