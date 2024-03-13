@@ -104,6 +104,9 @@ export default function SkillsSection() {
     "Hosting Setup",
     "Domain Configuration",
     "Unity 3D",
+    "Agile Project Management",
+    "Webapp Deployment",
+    "Android Studio",
   ];
 
   return (
