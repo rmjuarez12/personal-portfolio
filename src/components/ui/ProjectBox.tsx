@@ -7,9 +7,15 @@ import Button from "./Button";
 
 import { FaGithub } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Lightbox from "yet-another-react-lightbox";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
 
 export default function ProjectBox(props: ProjectBoxProps) {
+  const [openLightbox, setOpenLightbox] = useState(false);
+
   useEffect(() => {
     gsap.to(".project-box", { opacity: 1, translateX: 0, duration: 0.5 });
     gsap.to(".project-box img", { opacity: 1, duration: 0.5, delay: 0.5 });
@@ -23,12 +29,46 @@ export default function ProjectBox(props: ProjectBoxProps) {
     >
       <div className='basis-1/2 p-4'>
         <Image
-          className='mx-auto mb-6 w-auto h-auto rounded opacity-0'
+          className='mx-auto mb-6 w-auto h-auto rounded opacity-0 cursor-pointer'
           src={props.imageUrl}
-          alt='Richard Rodriguez Photo'
+          alt={props.title}
           width={800}
           height={200}
           priority={false}
+          onClick={() => setOpenLightbox(true)}
+        />
+        <Lightbox
+          className=' text-white'
+          open={openLightbox}
+          noScroll={{ disabled: false }}
+          close={() => setOpenLightbox(false)}
+          slides={[
+            {
+              src: props.imageUrl,
+              width: 1080,
+              height: 1620,
+            },
+          ]}
+          render={{
+            slide: ({ slide, offset, rect }) => {
+              return (
+                <div className='container'>
+                  <Image
+                    className='mx-auto mb-6 w-auto h-auto rounded'
+                    src={props.imageUrl}
+                    alt={props.title}
+                    width={1000}
+                    height={500}
+                    priority={false}
+                  />
+
+                  <h3 className='text-center text-2xl mb-4'>{props.title}</h3>
+                  <p className='text-lg text-center '>{props.description}</p>
+                </div>
+              );
+            },
+          }}
+          plugins={[Fullscreen, Zoom]}
         />
       </div>
 
