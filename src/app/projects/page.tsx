@@ -44,11 +44,29 @@ export default function Projects() {
 
         <ProjectBox
           className='mb-6'
+          imageUrl='/static/images/invaders-ex.jpg'
+          title='Space Invaders EX Game'
+          description='This is a videogame I created using Unity3D game engine.'
+          technologies={["Unity3D", "C#"]}
+          projectUrl='https://rmjuarez12.itch.io/invaders-ex'
+        />
+
+        <ProjectBox
+          className='mb-6'
           imageUrl='/static/images/wavykickzco.jpg'
           title='Wavy Kickz Website'
           description='This is a Shopify website, with a fully custom-made theme. The theme was built using Shopify Liquid language, based off of a PSD mockup.'
           technologies={["Shopify", "Liquid", "JavaScript", "jQuery"]}
           projectUrl='https://wavykickzco.com/'
+        />
+
+        <ProjectBox
+          className='mb-6'
+          imageUrl='/static/images/thesneakeratticllc.jpg'
+          title='The Sneaker Attic'
+          description='This is a Shopify website, with a fully custom-made theme. The theme was built using Shopify Liquid language.'
+          technologies={["Shopify", "Liquid", "JavaScript", "jQuery"]}
+          projectUrl='https://thesneakeratticllc.com/'
         />
       </div>
     </>
