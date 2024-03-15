@@ -40,7 +40,6 @@ export default function ProjectBox(props: ProjectBoxProps) {
         <Lightbox
           className=' text-white'
           open={openLightbox}
-          noScroll={{ disabled: false }}
           close={() => setOpenLightbox(false)}
           slides={[
             {
@@ -50,6 +49,8 @@ export default function ProjectBox(props: ProjectBoxProps) {
             },
           ]}
           render={{
+            buttonPrev: () => null,
+            buttonNext: () => null,
             slide: ({ slide, offset, rect }) => {
               return (
                 <div className='container'>
