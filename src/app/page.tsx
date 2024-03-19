@@ -125,11 +125,11 @@ export default function Home() {
         className='mt-20'
       />
 
-      <div className='flex flex-row flex-wrap justify-between'>
+      <div className='flex md:flex-row flex-col flex-wrap justify-between'>
         {services.map((service, index) => {
           return (
             <ServiceBox
-              className='basis-5/12 m-5'
+              className='md:basis-5/12 basis-full m-5'
               key={index}
               icon={service.icon}
               title={service.title}

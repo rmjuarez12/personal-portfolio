@@ -22,7 +22,7 @@ export default function MainMenu() {
   ];
 
   return (
-    <div>
+    <div className='flex md:flex-col flex-row'>
       {mainMenu.map((link) => {
         const isActive = pathname === link.url;
 

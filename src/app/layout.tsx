@@ -33,25 +33,25 @@ export default function RootLayout({
         <main className='mt-40'>
           <div
             id='main-section'
-            className='flex flex-row items-start scale-0 opacity-0'
+            className='flex sm:flex-row flex-col sm:items-start items-center scale-0 opacity-0'
           >
             <div
               id='section-1'
-              className={`basis-1/5 opacity-0 translate-y-10 md:p-6 md:sticky top-32 ${sharedSectionClasses}`}
+              className={`md:basis-1/5 opacity-0 translate-y-10 p-6 md:sticky top-32 mb-5 ${sharedSectionClasses}`}
             >
               <GeneralInfo />
             </div>
 
-            <div className='flex flex-row basis-4/5 items-start'>
+            <div className='flex md:flex-row flex-col-reverse md:basis-4/5 md:items-start sm:items-end items-center'>
               <div
                 id='section-2'
-                className={`basis-11/12 md:p-10 ${sharedSectionClasses}`}
+                className={`basis-11/12 p-10 md:w-auto w-full ${sharedSectionClasses}`}
               >
                 {children}
               </div>
               <div
                 id='section-3'
-                className={` basis-1/12 opacity-0 translate-y-10 p-4 md:sticky top-2 ${sharedSectionClasses}`}
+                className={`basis-1/12 opacity-0 translate-y-10 p-4 sticky top-2 mb-5 z-50 ${sharedSectionClasses}`}
               >
                 <MainMenu />
               </div>

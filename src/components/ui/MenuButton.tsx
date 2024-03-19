@@ -9,7 +9,7 @@ export default function MenuButton(props: MenuButtonProps) {
     <Link
       href={props.url}
       onClick={pageTransition}
-      className={`scroll-smooth size-20 flex flex-col rounded-lg hover:bg-red-900 align-middle justify-center items-center transition-all my-3 mx-auto ${
+      className={`scroll-smooth size-20 flex flex-col rounded-lg hover:bg-red-900 align-middle justify-center items-center transition-all my-3 md:mx-auto mx-3 ${
         props.isActive ? "bg-red-900" : "bg-slate-800"
       }`}
     >

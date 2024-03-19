@@ -1,7 +1,7 @@
 export default function ServiceBox(props: ServiceBoxProps) {
   return (
     <div
-      className={`${props.className} md:p-6 border-slate-800 border-2 border-solid flex flex-row rounded-lg`}
+      className={`${props.className} p-6 border-slate-800 border-2 border-solid flex flex-row rounded-lg`}
     >
       <div className={`mr-4 text-4xl ${props.iconColor}`}>{props.icon}</div>
 
