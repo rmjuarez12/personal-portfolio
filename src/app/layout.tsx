@@ -2,6 +2,8 @@ import Header from "@/components/sections/Header";
 import GeneralInfo from "@/components/sections/GeneralInfo";
 import MainMenu from "@/components/sections/MainMenu";
 
+import { Analytics } from "@vercel/analytics/react";
+
 import "../styles/globals.css";
 import { poppins, robotoMono } from "@/utility/fonts";
 
@@ -62,6 +64,8 @@ export default function RootLayout({
         <footer>
           <h1>footer</h1>
         </footer>
+
+        <Analytics />
       </body>
     </html>
   );
