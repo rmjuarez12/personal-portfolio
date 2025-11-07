@@ -12,8 +12,7 @@ export default function Home() {
     {
       text: (
         <>
-          <span className='text-fuchsia-400'>const</span> myExpertise{" "}
-          <span className='text-sky-300'>= [</span>
+          <span className="text-fuchsia-400">const</span> myExpertise <span className="text-sky-300">= [</span>
         </>
       ),
       highlight: false,
@@ -33,7 +32,7 @@ export default function Home() {
     {
       text: (
         <>
-          <span className='text-sky-300'>]</span>;
+          <span className="text-sky-300">]</span>;
         </>
       ),
       highlight: false,
@@ -45,9 +44,7 @@ export default function Home() {
     {
       text: (
         <>
-          console.<span className='text-fuchsia-400'>log</span>(
-          <span className='text-lime-500'>&apos;What I offer: &apos;</span>,
-          myExpertise);
+          console.<span className="text-fuchsia-400">log</span>(<span className="text-lime-500">&apos;What I offer: &apos;</span>, myExpertise);
         </>
       ),
       highlight: false,
@@ -90,46 +87,36 @@ export default function Home() {
         title={
           <>
             Hello, I&apos;m
-            <span className='text-red-400'> Richard Rodriguez</span>
+            <span className="text-red-400"> Richard Rodriguez</span>
           </>
         }
-        subtitle='RICK ROD DEV'
+        subtitle="RICK"
         showBorder={false}
       />
 
       <TypewritterText />
 
-      <p className='mb-4 text-lg'>
-        I&apos;m a dynamic and results-driven software engineer with over 10yrs
-        of experience developing and implementing innovative software solutions.
-        Proficient in multiple programming languages and technologies, with a
-        proven track record of delivering high-quality code on time. Skilled in
-        problem-solving and collaborating with cross-functional teams to drive
-        project success. Bilingual and well-spoken with ability to work closely
-        with people of all different backgrounds and personalities.
+      <p className="mb-4 text-lg">
+        I&apos;m a dynamic and results-driven software engineer with over 10yrs of experience developing and implementing innovative software
+        solutions. Proficient in multiple programming languages and technologies, with a proven track record of delivering high-quality code on time.
+        Skilled in problem-solving and collaborating with cross-functional teams to drive project success. Bilingual and well-spoken with ability to
+        work closely with people of all different backgrounds and personalities.
       </p>
 
-      <p className='mb-6 text-lg'>
-        My favorite hobbies are: drawing, play music(I love me some guitar
-        playing), and exercising. My utmost favorite hobby is eating, I am
-        really passionate about it! I also like to do Leetcode challenges, as it
-        helps my programming juices fresh and wired!
+      <p className="mb-6 text-lg">
+        My favorite hobbies are: drawing, play music(I love me some guitar playing), and exercising. My utmost favorite hobby is eating, I am really
+        passionate about it! I also like to do Leetcode challenges, as it helps my programming juices fresh and wired!
       </p>
 
       <CodeSnippet codeLines={codeLinesServices} />
 
-      <Heading
-        title={<>Let Me Support You With</>}
-        subtitle='Services'
-        showBorder={true}
-        className='mt-20'
-      />
+      <Heading title="Allow me to support with:" subtitle="My Services" showBorder={true} className="mt-20" />
 
-      <div className='flex md:flex-row flex-col flex-wrap justify-between'>
+      <div className="flex md:flex-row flex-col flex-wrap justify-between">
         {services.map((service, index) => {
           return (
             <ServiceBox
-              className='md:basis-5/12 basis-full m-5'
+              className="md:basis-5/12 basis-full m-5"
               key={index}
               icon={service.icon}
               title={service.title}

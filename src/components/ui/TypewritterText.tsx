@@ -51,16 +51,12 @@ export default function TypewritterText() {
   }, []);
 
   return (
-    <div className='typewritter-box bg-slate-800 flex flex-row items-center p-2 w-fit rounded mb-6'>
-      <div className='text-slate-500 text-2xl'>
+    <div className="typewritter-box bg-slate-800 flex flex-row items-center p-2 w-fit rounded mb-6">
+      <div className="text-slate-500 text-2xl">
         <IoIosArrowForward />
       </div>
 
-      <div
-        className={`anim-typewriter text-lime-500 font-bold ${robotoMono.className} text-2xl`}
-      >
-        Full-Stack Developer
-      </div>
+      <div className={`anim-typewriter text-lime-500 font-bold ${robotoMono.className} lg:text-2xl md:text-lg text-base`}>Full-Stack Developer</div>
     </div>
   );
 }
