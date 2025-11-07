@@ -13,24 +13,15 @@ export default function ExperienceSection() {
       description: (
         <>
           <ul>
-            <li>
-              Worked closely on converting Figma design into a functional
-              ReactJS app.
-            </li>
-            <li>
-              Worked in a team in creating a mobile app based on Flutter
-              software development kit.
-            </li>
-            <li>
-              I contributed to the backend development team of an ExpressJS
-              application.
-            </li>
+            <li>Worked closely on converting Figma design into a functional ReactJS app.</li>
+            <li>Worked in a team in creating a mobile app based on Flutter software development kit.</li>
+            <li>I contributed to the backend development team of an ExpressJS application.</li>
           </ul>
         </>
       ),
     },
     {
-      date: "Jan 2020 - Present",
+      date: "Jan 2020 - Sept 2024",
       title: "Viola Media | Deer Park, NY",
       headlingURL: "https://viola.media/",
       subtitle: "Web Developer - Freelancer",
@@ -38,14 +29,8 @@ export default function ExperienceSection() {
         <>
           <ul>
             <li>Developed, coded and updated Wordpress and HTML sites.</li>
-            <li>
-              Perform maintenance on Wordpress websites, and ensure there are no
-              compatibility errors.
-            </li>
-            <li>
-              Used programming capabilities in PHP, SQL and JavaScript and other
-              libraries as needed.
-            </li>
+            <li>Perform maintenance on Wordpress websites, and ensure there are no compatibility errors.</li>
+            <li>Used programming capabilities in PHP, SQL and JavaScript and other libraries as needed.</li>
           </ul>
         </>
       ),
@@ -58,25 +43,12 @@ export default function ExperienceSection() {
       description: (
         <>
           <ul>
-            <li>
-              Tested websites and performed troubleshooting prior to deployment.
-            </li>
-            <li>
-              Optimized Images and Videos web assets for speed and performance.
-            </li>
+            <li>Tested websites and performed troubleshooting prior to deployment.</li>
+            <li>Optimized Images and Videos web assets for speed and performance.</li>
             <li>Developed, coded and updated Wordpress and HTML sites.</li>
-            <li>
-              Created site layout and user interface using HTML and CSS
-              practices.
-            </li>
-            <li>
-              Used programming capabilities in PHP, SQL and JavaScript and other
-              libraries as needed.
-            </li>
-            <li>
-              Created Wordpress custom themes from supplied layered files(PSD,
-              PDF, or AI).
-            </li>
+            <li>Created site layout and user interface using HTML and CSS practices.</li>
+            <li>Used programming capabilities in PHP, SQL and JavaScript and other libraries as needed.</li>
+            <li>Created Wordpress custom themes from supplied layered files(PSD, PDF, or AI).</li>
           </ul>
         </>
       ),
@@ -89,22 +61,11 @@ export default function ExperienceSection() {
       description: (
         <>
           <ul>
-            <li>
-              Created site layout and user interface using HTML and CSS
-              practices.
-            </li>
-            <li>
-              Created fully functional Wordpress themes based off of PSD files.
-            </li>
+            <li>Created site layout and user interface using HTML and CSS practices.</li>
+            <li>Created fully functional Wordpress themes based off of PSD files.</li>
             <li>Converted mockups into HTML, JavaScript, AJAX and JSON.</li>
-            <li>
-              Developed wireframes, site maps and content inventories for new
-              website designs.
-            </li>
-            <li>
-              Ensure all projects were fully functional prior to launching and
-              setting the site live.
-            </li>
+            <li>Developed wireframes, site maps and content inventories for new website designs.</li>
+            <li>Ensure all projects were fully functional prior to launching and setting the site live.</li>
           </ul>
         </>
       ),
@@ -117,14 +78,8 @@ export default function ExperienceSection() {
       description: (
         <>
           <ul>
-            <li>
-              Assisted with developing Websites in PHP/MySQL in order to work
-              with a custom CMS.
-            </li>
-            <li>
-              Assist with updating content, fixing any issues, and any
-              maintenance a website requires.
-            </li>
+            <li>Assisted with developing Websites in PHP/MySQL in order to work with a custom CMS.</li>
+            <li>Assist with updating content, fixing any issues, and any maintenance a website requires.</li>
             <li>Design/modify graphics when needed.</li>
           </ul>
         </>
@@ -134,13 +89,7 @@ export default function ExperienceSection() {
 
   return (
     <>
-      <Timeline
-        title='Experience'
-        timelineData={jobHistory}
-        icon={<MdWork />}
-        iconColor='text-lime-500'
-        className='mb-12'
-      />
+      <Timeline title="Experience" timelineData={jobHistory} icon={<MdWork />} iconColor="text-lime-500" className="mb-12" />
     </>
   );
 }
