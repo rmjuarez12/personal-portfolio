@@ -112,11 +112,11 @@ export default function Home() {
 
       <Heading title="Allow me to support with:" subtitle="My Services" showBorder={true} className="mt-20" />
 
-      <div className="flex md:flex-row flex-col flex-wrap justify-between gap-3.5">
+      <div className="home-service-boxes flex md:flex-row flex-col flex-wrap justify-between">
         {services.map((service, index) => {
           return (
             <ServiceBox
-              className="md:basis-5/12 basis-full"
+              className="home-service-box basis-full"
               key={index}
               icon={service.icon}
               title={service.title}

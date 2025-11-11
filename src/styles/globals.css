@@ -115,3 +115,12 @@ ul li::before {
   transform: scale(1.05);
   opacity: 0.8;
 }
+
+/* Home Service Boxes */
+.home-service-boxes {
+  gap: 15px;
+}
+
+.home-service-box {
+  flex: 1 1 calc(50% - 15px);
+}

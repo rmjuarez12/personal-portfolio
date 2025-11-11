@@ -31,18 +31,13 @@ export default function Timeline(props: TimelineProps) {
   }, [randomNumber]);
 
   return (
-    <div
-      id={`timeline-${randomNumber}`}
-      className={`${props.className} timeline-container relative z-10`}
-    >
-      <div className='header flex flex-row items-center mb-10 opacity-0 -translate-x-10'>
-        {props.icon != null && (
-          <div className={`${props.iconColor} text-4xl mr-3`}>{props.icon}</div>
-        )}
+    <div id={`timeline-${randomNumber}`} className={`${props.className} timeline-container relative z-10`}>
+      <div className="header flex flex-row items-center mb-10 opacity-0 -translate-x-10">
+        {props.icon != null && <div className={`${props.iconColor} text-4xl mr-3`}>{props.icon}</div>}
         <h3 className={`${poppins.className} text-3xl`}>{props.title}</h3>
       </div>
 
-      <div className='timeline relative overflow-hidden h-0'>
+      <div className="timeline relative overflow-hidden h-0">
         {props.timelineData.map((timeline, index) => {
           return (
             <TimelineSection
@@ -62,26 +57,20 @@ export default function Timeline(props: TimelineProps) {
 
 function TimelineSection(props: TimelineSectionObj) {
   return (
-    <div className='timelineSection flex flex-row mb-4 relative pl-5 z-20'>
-      <div className='basis-1/6 text-slate-400 text-lg font-semibold mr-6 pt-2'>
-        {props.date}
-      </div>
+    <div className="timelineSection flex md:flex-row flex-col mb-4 relative pl-5 z-20">
+      <div className="basis-1/6 text-slate-400 text-lg font-semibold mr-6 pt-2 sm:mb-0 mb-1.5">{props.date}</div>
 
-      <div className='basis-2/3'>
-        <div className='font-bold text-2xl text-red-400'>
+      <div className="basis-2/3">
+        <div className="font-bold text-2xl text-red-400">
           {props.headlingURL != null ? (
-            <a
-              className='underline hover:text-slate-500 transition-all'
-              href={props.headlingURL}
-              target='_blank'
-            >
+            <a className="underline hover:text-slate-500 transition-all" href={props.headlingURL} target="_blank">
               {props.title}
             </a>
           ) : (
             props.title
           )}
         </div>
-        <div className=' font-semibold text-lg mb-2'>{props.subtitle}</div>
+        <div className=" font-semibold text-lg mb-2">{props.subtitle}</div>
         <div>{props.description}</div>
       </div>
     </div>
